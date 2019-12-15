@@ -1,3 +1,12 @@
-var dateTime = document.getElementById("clock");
-dateTime = new Date("2015-06-17 14:24:36");
-dateTime = moment(dateTime).format("YYYY-MM-DD HH:mm:ss");
+$(document).ready;
+
+setInterval(function () {
+    var now = moment();
+    $(".saveBtn").on("click", function () {
+   console.log(this);
+   var value = $(this).siblings(".description").val();
+   var time =  $(this).siblings(".hour").text();
+   localStorage.setItem(time, value);
+});
+    $("#currentDay").text(now);
+}, 1000);
