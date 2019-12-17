@@ -10,4 +10,20 @@
 - 
 
 
+* local storage example:
+- localStorage.setItem("dog","max");
+- to retrive a value use the method for example: localStorage.getItem("dog")
+-  to delete an item use the method : localStorage.removeItem("dog");
+-  localStorage stores strings 
+-  if you want to store an object you have to set it into a string first.
+- you can set an object into a string by using the method: 
+
+var stringObj =  JSON.stringify(obj) //and save the sting of the object like this localStorage.getItem("obj", stringObj);
+
+- to get the sting object back to an object youll wanna uses the method JSON.parse() and youll wanna set it up like this : 
+
+var objFromLocalStorage = localStorage.getItem("obj"); 
+var toObj = JSON.parse(objFromLocalStorage);
+
+
 

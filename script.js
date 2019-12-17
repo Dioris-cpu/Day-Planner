@@ -8,7 +8,10 @@ setInterval(function () {
         var time = $(this).siblings(".hour").text();
         localStorage.setItem(time, value);
     });
-    $("#currentDay").text(now);
-}, 1000);
+    $("#currentDay").text(moment().format("llll"));
+});
+
+
+
 
 
