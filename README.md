@@ -1,6 +1,6 @@
 # Day-Planner
 
-* The user is able to make a plan out there day between a 9 to 5 work day
+* The user is able to plan out there day between a 9 to 5 work day.
 - on the top of the page is the current date and the time.
 - the color of the text area changes depending on the hour compared to the current time on 
   the top of the page.
@@ -11,5 +11,5 @@
 * What the user types inside of the text area and saves is stored within localStorage.
 - when the user clicks on the save button whatever he types is then saved on to the page
   and stored on to localStorage. 
-  
+
   https://dioris-cpu.github.io/Day-Planner/
